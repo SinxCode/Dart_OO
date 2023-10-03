@@ -30,6 +30,16 @@ print(Viagem.codigoTrabalho);
 
 }
 
+class Viagem{
+
+  //static serve para conseguirmos acessar algum dado diretamente na estrutura da classe, sem necessitar de instancia (construtor ou método).
+  static String codigoTrabalho = 'kjswedgkj';
+  double dinheiro = 0;
+
+
+}
+
+
 
 Set<String>registrarDestinos(String destino, Set<String> banco){
 
@@ -62,3 +72,10 @@ switch(locomocao){
 
 }
 
+enum Transporte{ 
+  carro,
+  bike,
+  andando,
+  skate
+
+}
