@@ -1,28 +1,5 @@
 void main(){
 
-
-//String nome = 'Laranja';
-//double peso = 100.2;
-//String cor = 'Verde e Amarela';
-//String sabor = 'Doce e cítrica';
-//int diasDesdeColheita = 30;
-//bool isMadura;
-
-//Fruta fruta01 = Fruta(nome, peso, cor, sabor, diasDesdeColheita); //Está alimentando a classe conforme as variáveis acima / criando o objeto fruta01
-
-//Fruta fruta02 = Fruta("Uva", 0.2, "Roxa", "Doce", 5); //Alimentando a classe  através do construtor/ criando o objeto fruta02
-
-//print(fruta01.nome); //Por conta da criação da classe, podemos referenciar qualquer dado pelo nome, e não pelo indice como em listas.
-//print(fruta01); //irá imprimir "instace of Fruta", pois fruta01 é um objeto dentro da classe Fruta. 
-                //Quando printamos fruta01.nome estamos acessando a PROPRIEDADE "nome" do OBJETO fruta01 do qual estamos INSTANCIANDO.
-
-//print(fruta02.nome);
-//print(fruta02);
-
-//fruta01.estaMadura(30);
-//fruta02.estaMadura(10);
-//-------------------------------------------------------------------------------------------------------------------------------------------------------
-
 //Criando objetos para as classes após a herança:
 Legumes mandioca1 = Legumes('Macaxeira', 1200, 'Marrom', true);
 Fruta banana1 = Fruta('Banana', 75, 'Amarela', 'Doce', 12);
@@ -42,16 +19,7 @@ limao1.fazerSuco();
 // mandioca1.fazerSuco(); //Não é possível acessas o método fazer suco, pois Legumes não herda nada de Fruta
 // limao1.cozinhar();     //Não é possível acessas o método cozinhar, pois Fruta não herda nada de Legumes /
 
-
-
-
-
-
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------------
-
 }
-
 
 bool funcEstaMadura(int dias) 
 {
