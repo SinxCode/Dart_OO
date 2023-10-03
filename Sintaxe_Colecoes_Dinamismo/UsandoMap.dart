@@ -6,6 +6,7 @@ Map<String, dynamic> mapSinx = pessoaSinx.toMap();
 print(mapSinx);
 
 }
+
 class Pessoa{
   String nome;
   int idade;
