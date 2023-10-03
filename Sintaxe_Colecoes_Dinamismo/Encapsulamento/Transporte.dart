@@ -3,5 +3,4 @@ enum Transporte{
   bike,
   andando,
   skate
-
 }
