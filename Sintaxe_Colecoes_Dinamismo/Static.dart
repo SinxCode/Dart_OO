@@ -1,6 +1,6 @@
 void main(){
 
-escolherMeioTransporte(Transporte.skate); 
+
 
 Set<String> registrosVisitados = <String>{};
 registrosVisitados = registrarDestinos("São Paulo", registrosVisitados);
