@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "Sintaxe_Colecoes_Dinamismo/Sets.dart",
+            "program": "Sintaxe_Colecoes_Dinamismo/maps_ou_DICIONÁRIOS.dart",
             "console": "terminal"
         }
     ]
