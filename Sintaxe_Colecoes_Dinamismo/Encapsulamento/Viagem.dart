@@ -1,5 +1,5 @@
 
-import '../Enum.dart';
+import 'Transporte.dart'; //Importa o Enum Transporte para ser utilizado como propriedade na Classe Viagem
 
 class Viagem{
 
