@@ -126,7 +126,7 @@ class Legumes extends Alimento implements Bolo{ //Para atribuir uma abastração
 
 }
 
-//IMPLEMENTANDO CLASSE ABSTRATA
+
 class Citricas extends Fruta{
 
   double nivelAzedo;
@@ -150,7 +150,7 @@ class Citricas extends Fruta{
 
 }
 
-//IMPLEMENTANDO CLASSE ABSTRATA
+//IMPLEMENTANDO CLASSE ABSTRATA COM POLIMORFISMO
 class Nozes extends Fruta{
  
   double porcentagemDeOleoNatural;
@@ -159,7 +159,8 @@ class Nozes extends Fruta{
   :super(nome, peso, cor, sabor, diasDesdeColheita);
 
 
-  @override //Sobreescreve a função da Classe Abstrata, pois nem sempre ela funcionará da mesma maneira para todas as situações.
+  @override //NESTE CASO, NOTE QUE NÃO ESTAMOS UTILIZANDO O "IMPLEMENTS" POIS COMO ESTAMOS HERDANDO DADOS DE FRUTA, E NA CLASSE FRUTA JÁ EXISTE O IMPLMENTO DE BOLO
+            //TAMBÉM HERDAMOS TODOS OS MÉTODOS DA CLASSE ABASTRATA 'BOLO'
   void fazerMassa(){
 
     print('Tirar a casca');
