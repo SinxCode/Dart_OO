@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "Polimorfismo_e_Sobrescrita.dart",
+            "program": "Sintaxe_Colecoes_Dinamismo/Enum.dart",
             "console": "terminal"
         }
     ]

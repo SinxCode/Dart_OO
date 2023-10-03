@@ -19,7 +19,6 @@ limao1.fazerSuco();
 banana1.separarIngredientes();
 macadamia1.fazerMassa();
 
-
 }
 
 bool funcEstaMadura(int dias) 
