@@ -1,7 +1,7 @@
 void main(){
 
 //escolherMeioTransporte(0); //Dessa maneira estamos chamando a função por um número inteiro, o que não faz muito sentido
-escolherMeioTransporteEnum(Transporte.carro); //Dessa maneira, utilizando o Enum, podemos chamar por um elemento dentro da lista dele.
+escolherMeioTransporteEnum(Transporte.skate); //Dessa maneira, utilizando o Enum, podemos chamar por um elemento dentro da lista dele.
 
 }
 
@@ -33,6 +33,10 @@ switch(locomocao){ //Pode substituir o IF,
     print('Vou andando para aventura');
     break;
 
+    default:
+    print('Estou indo para aventura');
+    break;
+
 }
 
 }
@@ -42,6 +46,7 @@ switch(locomocao){ //Pode substituir o IF,
 enum Transporte{ //Cria uma lista para ser comparada com um nome;
   carro,
   bike,
-  andando
+  andando,
+  skate
 
 }
