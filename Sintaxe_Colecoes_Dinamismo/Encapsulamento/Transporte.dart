@@ -2,5 +2,6 @@ enum Transporte{
   carro,
   bike,
   andando,
-  skate
+  skate,
+  aviao
 }
