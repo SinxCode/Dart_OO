@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "Sintaxe_Colecoes_Dinamismo/Encapsulamento/ProjetoViagem.dart",
+            "program": "Erros_Excecoes_PilhadeExecucao/ProjetoBanco.dart",
             "console": "terminal"
         }
     ]
