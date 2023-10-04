@@ -10,6 +10,11 @@ class BankController {
     _database[id] = account;
   }
 
+   //Método para verificar see o banco de dados contem a id para fazer as verificações
+  bool verifyId(String id){
+    return _database.containsKey(id);
+  }
+
   //Método para transferir um valor para outra conta 
   bool makeTransfer({required String idSender, required String idReceiver, required double ammount})
   {    
@@ -46,10 +51,7 @@ class BankController {
 
   }
 
-      //Método para verificar see o bancode dados contem a id para fazer as verificações
-      bool verifyId(String id){
-        return _database.containsKey(id);
-      }
+     
        
 
 }
