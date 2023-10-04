@@ -24,7 +24,7 @@ void functionTwo(){
 
   for (int i = 1; i <= 5; i++) {
     print(i);
-    double amount = double.parse('Not a number');
+    //double amount = double.parse('Not a number');
   }
   print('Finished F02');
 }
