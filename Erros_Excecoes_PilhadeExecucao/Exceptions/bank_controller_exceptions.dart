@@ -12,7 +12,6 @@ class SenderIdInvalidException implements Exception{   //atrubuindo a classe abs
 
 } 
 
-
 class ReceiverInvalidException implements Exception{
   static const String report ='ReceiverInvalidException';
   String idReceiver;
