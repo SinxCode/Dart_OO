@@ -2,7 +2,6 @@ import 'Transporte.dart';
 import 'Viagem.dart';
 
 main(){
-
  
 Viagem viagemMaio = Viagem(locomocao: Transporte.aviao);
 print(viagemMaio.consultarTotalLocaisVisitados); //chamando o método get (da propriedade encapsulada '_totalLocaisVisitados')
