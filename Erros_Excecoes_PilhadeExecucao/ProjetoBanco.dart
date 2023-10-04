@@ -11,7 +11,8 @@ void main(){
   bankController.addAccount(id: 'Honey', account: Account(name: 'Honey Bunny', balance: 1000, isAuthenticated: true));
 
   //Fazendo transferência
- bool result = bankController.makeTransfer(idSender: 'Sinx', idReceiver: 'Honey', ammount: 50);
+  
+ bool result = bankController.makeTransfer(idSender: 'Sin', idReceiver: 'Honey', ammount: 50);
 
   //observando resultado
   print(result);

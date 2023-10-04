@@ -21,7 +21,7 @@ class BankController {
   {    
       //Verificar se ID de remetente é válido
       if (!verifyId(idSender)) {
-        throw  SenderIdInvalidException(); //lança a exceção para  a classe que irá trata-la.
+        throw  SenderIdInvalidException(idSender: idSender); //lança a exceção para  a classe que irá trata-la.
       }
 
       //Verificar se ID de destinatário é válido
