@@ -13,17 +13,9 @@ void functionOne(){
     try {
         functionTwo();  
     }
-    
-    on FormatException catch(e) { //Essa é a sintax para o try on catch, normalmente utilizamos um objeto chamado E para instanciar a classe do erro.
-      
-      print('Foi capturada dentro da FunctionOne.');
-      print(e.message);
-      print(e.source);
-      print(e.message);
-      
-    }on Exception catch(e){ //Utilizar Try on + Exception irá pegar qualquer tipo de exceção.
-      print('Uma IOeXCPETION FOI ENCONTRADA.');
-      e.toString();
+      on Exception catch(e){ //Utilizar Try on + Exception irá pegar qualquer tipo de exceção. É útil para quando não se sabe que tipo de erro pode acontecer.
+      print('Um ERRO FOI ENCONTRADO.');
+      print(e.toString()); //printa o tipo de erro.
     }
   functionTwo();
   print('Finished F01');
