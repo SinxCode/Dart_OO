@@ -6,9 +6,10 @@ class Account{
   //construtor nominal obrigatório
   Account({required this.name, required this.balance, required this.isAuthenticated});
 
-  //Método para atualizar o valor de saldo da conta.
+  //Método para atualizar o valor de saldo da conta;
   editBalance({required value}){
     balance = balance + value;
+    
 
   }
 
