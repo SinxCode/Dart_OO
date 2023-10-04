@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "Erros_Excecoes_PilhadeExecucao/ProjetoBanco.dart",
+            "program": "TryOn.dart",
             "console": "terminal"
         }
     ]
