@@ -13,9 +13,13 @@ void main(){
 
   //Fazendo transferência
   try{
-      bool result = bankController.makeTransfer(idSender: 'Sinx', idReceiver: 'Honey', ammount: 5000);
+      bool result = bankController.makeTransfer(idSender: 'Sinx', idReceiver: 'Honey', ammount: 100);
       //observando resultado
-  print(result);
+  
+  if (result) {
+    print('Transação concluída com sucesso!');
+  }
+
   } on SenderIdInvalidException catch(e){ 
     print('O ID "${e.idSender}" do remetente não é um ID válido!');
     
@@ -27,6 +31,8 @@ void main(){
 
   }on SenderBalanceLowerThanAmountException catch (e){
     print('O usuário de ID "${e.idSender}" tentou enviar ${e.ammount} sendo em sua conta há somente ${e.senderBalance}, logo, pobre!');
+  } on Exception { //caso não seja nenhuma das exceções que previmos, utilizamos um Exception comum, que pegará qualquer erro, sem especificação.
+    print('Algo deu errado!');
   }
   
 
