@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "Try_on_Catch.dart",
+            "program": "Tratamento_de_Erros/StackTrace_Finally_Rethrow.dart",
             "console": "terminal"
         }
     ]
