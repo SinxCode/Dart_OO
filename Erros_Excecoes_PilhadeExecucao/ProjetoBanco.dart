@@ -1,3 +1,4 @@
+import 'Exceptions/bank_controller_exceptions.dart';
 import 'controllers/bank_controller.dart';
 import 'models/account.dart';
 
@@ -11,11 +12,16 @@ void main(){
   bankController.addAccount(id: 'Honey', account: Account(name: 'Honey Bunny', balance: 1000, isAuthenticated: true));
 
   //Fazendo transferência
-  
- bool result = bankController.makeTransfer(idSender: 'Sin', idReceiver: 'Honey', ammount: 50);
-
-  //observando resultado
+  try{
+      bool result = bankController.makeTransfer(idSender: 'Sin', idReceiver: 'Honey', ammount: 50);
+      //observando resultado
   print(result);
+  } on SenderIdInvalidException catch(e){
+    print('O ID "${e.idSender}" do remetente não é um ID válido!');
+
+    
+  }
+  
 
 }
 
