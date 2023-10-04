@@ -1,3 +1,4 @@
+import '../Exceptions/bank_controller_exceptions.dart';
 import '../models/account.dart';
 
 class BankController {
@@ -20,7 +21,7 @@ class BankController {
   {    
       //Verificar se ID de remetente é válido
       if (!verifyId(idSender)) {
-        return false;
+        throw  SenderIdInvalidException(); //lança a exceção para  a classe que irá trata-la.
       }
 
       //Verificar se ID de destinatário é válido

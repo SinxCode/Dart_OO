@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "Tratamento_de_Erros/StackTrace_Finally_Rethrow.dart",
+            "program": "Erros_Excecoes_PilhadeExecucao/ProjetoBanco.dart",
             "console": "terminal"
         }
     ]
