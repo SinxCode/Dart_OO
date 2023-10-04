@@ -13,7 +13,7 @@ void main(){
 
   //Fazendo transferência
   try{
-      bool result = bankController.makeTransfer(idSender: 'Sin', idReceiver: 'Honey', ammount: 100);
+      bool result = bankController.makeTransfer(idSender: 'Sinx', idReceiver: 'Honey', ammount: 5000);
       //observando resultado
   
   if (result) {
@@ -35,7 +35,7 @@ void main(){
 
   }on SenderBalanceLowerThanAmountException catch (e){
     print(e);
-    print('O usuário de ID "${e.idSender}" tentou enviar ${e.ammount} sendo em sua conta há somente ${e.senderBalance}, logo, pobre!');
+    print('O usuário de ID "${e.idSender}" tentou enviar ${e.ammount} sendo que em sua conta há somente ${e.senderBalance}, logo, pobre!');
   } on Exception { //caso não seja nenhuma das exceções que previmos, utilizamos um Exception comum, que pegará qualquer erro, sem especificação.
     print('Algo deu errado!');
   }
