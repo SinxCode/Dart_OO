@@ -8,8 +8,25 @@ class SenderIdInvalidException implements Exception{   //atrubuindo a classe abs
 } 
 
 
-class ReceiverInvalidException implements Exception{}
+class ReceiverInvalidException implements Exception{
+  String idReceiver;
 
-class SenderNotAuthenticatedException implements Exception{}
+  ReceiverInvalidException({required this.idReceiver});
 
-class SenderBalanceLowerThanAmountException implements Exception{}
+}
+
+class SenderNotAuthenticatedException implements Exception{
+  String idSender;
+
+  SenderNotAuthenticatedException({required this.idSender});
+}
+
+class SenderBalanceLowerThanAmountException implements Exception{
+  String idSender;
+  double senderBalance;
+  double ammount;
+
+  SenderBalanceLowerThanAmountException({required this.idSender, required this.senderBalance, required this.ammount});
+
+
+}

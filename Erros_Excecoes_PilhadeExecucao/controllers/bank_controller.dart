@@ -26,7 +26,7 @@ class BankController {
 
       //Verificar se ID de destinatário é válido
       if(!verifyId(idReceiver)){
-        throw ReceiverInvalidException(); //lança a exceção para  a classe que irá trata-la.
+        throw ReceiverInvalidException(idReceiver: idReceiver); //lança a exceção para  a classe que irá trata-la.
 
       }
 
@@ -35,12 +35,12 @@ class BankController {
 
       //Verificar se o remetente está autenticado
       if (!accountSender.isAuthenticated) {
-        throw SenderNotAuthenticatedException();
+        throw SenderNotAuthenticatedException(idSender: idSender);
       }
 
       //Verificar se o remetente possui saldo suficiente
       if (accountSender.balance < ammount) {
-        throw SenderBalanceLowerThanAmountException();
+        throw SenderBalanceLowerThanAmountException(idSender: idSender, senderBalance: accountSender.balance, ammount: ammount);
       }
 
         // Se tudo estiver certo, efetivar transação
