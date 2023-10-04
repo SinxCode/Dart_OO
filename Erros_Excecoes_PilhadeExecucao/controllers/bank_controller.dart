@@ -43,7 +43,6 @@ class BankController {
       }
 
         // Se tudo estiver certo, efetivar transação
-
         accountSender.balance -=ammount;
         accountReceiver.balance +=ammount;
 
